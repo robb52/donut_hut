@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url('../images/donut-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: vh;
+
+}
+
+body{
+  margin: 0;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background: rgb(247, 254, 140, .4);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6em;
+}
+
+ul {
+  display: flex; 
+  list-style: none;
+  padding-left: 0;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  font-size: calc(.75rem + 5 * ((100vw - 320px) / 680));
+}
+
+.logo {
+  font-family: 'Luckiest Guy', cursive;
+  margin-left: 1em;
+  font-size: 1.2em;
+}
+
+.list-items.about {
+  width: 45px;
+}
+
+.list-items.donuts {
+  width: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.list-items.location {
+  margin-right: 2em;
+  width: 40px;
+}
+
+.list-items.location img {
+  border-radius: 50%;
+}
+
+.about-main {
+  padding: 1em;
+  background: rgba(248, 187, 245, .5);
+  border-radius: 1em;
+  margin-bottom: 8em;
+}
+
+.about-title {
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(4, 4, 236);
+  font-family: 'Bangers', cursive;
+  text-shadow: 2px 2px 0 #CE13C0, 2px -2px 0 #CE13C0, 
+  -2px 2px 0 #CE13C0, -2px -2px 0 #CE13C0, 2px 0px 0 #CE13C0, 
+  0px 2px 0 #CE13C0, -2px 0px 0 #CE13C0, 0px -2px 0 #CE13C0, 
+  2px 2px 2px rgba(206,19,192,0);
+}
+
+.d-stack {
+  width: 6em;
+  border-radius: 5px;
+  float: left;
+  margin-right: 1em;
+  margin-top: .5em;
+}
+
+.donut img {
+  width: 65px;
+  height: 55px;
+  clip-path: ellipse(40% 50% at 50% 50%); 
+  transform-style: preserve-3d; 
+}
+
+.donut img:hover,
+.coffee img:hover {
+  animation: rubberBand;
+  animation-duration: 2s;
+}
+
+.coffee img {
+  width: 63px;
+  height: 63px;
+  clip-path: ellipse(45% 45% at 50% 50%);
+}
+
+.about-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: .5em;
+}
+
+.summary {
+  border-radius: 1em;
+  background: rgba(248, 187, 245, .5);
+}
+
+.page-wrapper {
+  margin: 1em 2em;
+}
+
+
+.donuts,
+.location {
+  margin-top: 1em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.donuts {
+  background: rgb(247, 254, 140, .4);
+
+}
+
+.donut-title,
+.location-title {
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(4, 4, 236);
+  font-family: 'Bangers', cursive;
+  text-shadow: 2px 2px 0 #CE13C0, 2px -2px 0 #CE13C0, 
+  -2px 2px 0 #CE13C0, -2px -2px 0 #CE13C0, 2px 0px 0 #CE13C0, 
+  0px 2px 0 #CE13C0, -2px 0px 0 #CE13C0, 0px -2px 0 #CE13C0, 
+  2px 2px 2px rgba(206,19,192,0);
+}
+
+.card {
+  border: 1px solid pink;
+  background: rgb(253, 167, 198, .4);
+  text-align: center;
+  border-radius: 1em;
+  padding: 1.5em 1em;
+  margin: 2em 0;
+}
+
+.donut-img {
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.donut-img-choc {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.location {
+  text-align: center;
+  background: rgba(249, 94, 94, 0.3);
+  margin-top: 5em;
+}
+
+.map-image{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  height:0;
+  margin: 1em 0 1em;
+  border-radius: 5px;
+}
+
+.socail-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copy-right {
+  text-align: center;
+  font-size: .75rem;
+}
+
+.socail-item i {
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(221, 14, 159);
+  margin: 1em 0;
+}
+
