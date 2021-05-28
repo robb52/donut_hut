@@ -45,7 +45,7 @@ header {
   margin-bottom: 6em;
 }
 
-ul {
+ul.list{
   display: flex; 
   list-style: none;
   padding-left: 0;
@@ -73,7 +73,7 @@ li a {
   padding: 0;
 }
 
-.list-items.location {
+.list-items.pin {
   margin-right: 2em;
   width: 40px;
 }
@@ -206,6 +206,8 @@ li a {
 .socail-items {
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
 }
 
 .copy-right {
@@ -226,3 +228,36 @@ li a {
   margin: 1em 0;
 }
 
+@media (min-width: 600px) {
+  ul.list {
+    padding-right: 3em;
+  }
+
+  .list-items.about,
+  .list-items.donuts {
+   margin-right: 2em;
+  }
+
+  .logo {
+    font-size: 3vw;
+  }
+
+  .about-main {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .donut-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    
+  }
+
+  .donut-img-choc {
+    width: 85%;
+    margin: 0;
+  }
+
+}
