@@ -20,9 +20,9 @@
 
 			<nav>
 				<ul class="list">
-					<li class="list-items about"><a href="#"><img src="images/about.png" alt=""></a></li>
-					<li class="list-items donuts"><a href="#"><img src="images/menu.png" alt=""></a></li>
-					<li class="list-items pin"><a href="#"><img src="images/pin-2.png" alt=""></a></li>
+					<li class="list-items about"><a href="#about"><img src="images/about.png" alt=""></a></li>
+					<li class="list-items donuts"><a href="#donuts"><img src="images/menu.png" alt=""></a></li>
+					<li class="list-items pin"><a href="#location"><img src="images/pin-2.png" alt=""></a></li>
 				</ul>
 			</nav>
 
@@ -30,7 +30,7 @@
 	
 		<div class="page-wrapper">
 
-			<section class="about">
+			<section id="about">
 				<div class="about-main">
 						<h1 class="about-title">Our Story</h1>
 						<img src="images/donut-stack.jpg" alt="" class="d-stack">
@@ -40,12 +40,12 @@
 						hic cumque odit ullam corrupti aliquid sint distinctio excepturi minima quo iste 
 						unde quam minus nihil reiciendis fugit? Reiciendis.</p>
 					<div class="about-links">
-						<a class="donut" class="animate__animated animate__rubberBand" href="#"><img src="images/donut-bite.jpeg" alt=""></a> 
-						<a class="coffee" class="animate__animated animate__rubberBand" href="#"><img src="images/coffee-glass.jpg" alt=""></a>
+						<a class="donut" class="animate__animated animate__rubberBand" href="#donuts"><img src="images/donut-bite.jpeg" alt=""></a> 
+						<a class="coffee" class="animate__animated animate__rubberBand" href="#donuts"><img src="images/coffee-glass.jpg" alt=""></a>
 					</div>
 				</div>
 				
-				<div class="donuts">
+				<div id="donuts">
 					<h3 class="donut-title">Donuts</h3>
 					<div class="donut-section">
 						<div class="card">
@@ -79,18 +79,39 @@
 								Voluptatibus fugit cum ipsum architecto provident beatae.
 							</p>
 						</div>
+
+						<div class="card">
+							<img class="donut-img" src="images/donut-card-4.png" alt="">
+							<h3 class="title-1">Rainbow sprinkle</h3>
+							<p class="desc-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Voluptatibus fugit cum ipsum architecto provident beatae.
+							</p>
+						</div>
+
+						<div class="card">
+							<img class="donut-img" src="images/donut-card-2.png" alt="">
+							<h3 class="title-1">Dozen</h3>
+							<p class="desc-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Voluptatibus fugit cum ipsum architecto provident beatae.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<div class="location">
+			<div id="location">
 				<div class="location-sec">
 					<h3 class="location-title">Visit Us</h3>
-					<p>12345 Main Street</p>
-					<p>Donut Town, CA 91234</p>
-					<p>(123)555-5555</p>
-					<div class="map-image">
-						<img src="images/map-image.png" alt="">
+					<div class="location-info">
+						<ul class="address">
+							<li class="street">12345 Main Street</li>
+							<li class="town">Donut Town, CA 91234</li>
+							<li class="phone">(123)555-5555</li>
+							<li class="email">donuts@donuthut.com</li>
+						</ul>
+						<div class="map-image">
+							<img src="images/map-image.png" alt="">
+						</div>
 					</div>
 				</div>			
 			</div>

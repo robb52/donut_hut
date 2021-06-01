@@ -36,13 +36,19 @@ img {
   width: 100%;
 }
 
+.page-wrapper {
+  padding-top: 3em;
+}
+
 header {
   background: rgb(247, 254, 140, .4);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 6em;
+  /*position: fixed;
+  width: 100%;
+  top: 0;*/
 }
 
 ul.list{
@@ -74,7 +80,7 @@ li a {
 }
 
 .list-items.pin {
-  margin-right: 2em;
+  margin-right: 1em;
   width: 40px;
 }
 
@@ -86,13 +92,14 @@ li a {
   padding: 1em;
   background: rgba(248, 187, 245, .5);
   border-radius: 1em;
-  margin-bottom: 8em;
+  margin: 9em 0;
 }
 
 .about-title {
   letter-spacing: 1px;
   text-align: center;
   font-size: 2rem;
+  margin: .75em 0;
   color: rgb(4, 4, 236);
   font-family: 'Bangers', cursive;
   text-shadow: 2px 2px 0 #CE13C0, 2px -2px 0 #CE13C0, 
@@ -145,14 +152,14 @@ li a {
 }
 
 
-.donuts,
-.location {
+#donuts,
+#location {
   margin-top: 1em;
   border-radius: 1em;
   padding: 1em;
 }
 
-.donuts {
+#donuts {
   background: rgb(247, 254, 140, .4);
 
 }
@@ -189,7 +196,7 @@ li a {
   margin-bottom: 1em;
 }
 
-.location {
+#location {
   text-align: center;
   background: rgba(249, 94, 94, 0.3);
   margin-top: 5em;
@@ -201,6 +208,10 @@ li a {
   height:0;
   margin: 1em 0 1em;
   border-radius: 5px;
+}
+
+.address {
+  list-style: none;
 }
 
 .socail-items {
@@ -229,6 +240,7 @@ li a {
 }
 
 @media (min-width: 600px) {
+
   ul.list {
     padding-right: 3em;
   }
@@ -244,7 +256,7 @@ li a {
 
   .about-main {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 8em auto;
     line-height: 1.7;
   }
 
@@ -259,5 +271,37 @@ li a {
     width: 85%;
     margin: 0;
   }
+
+  .location-info {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+    margin-right: 1.5em;
+    gap: 1em; 
+  }
+
+  #location {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .address {
+    list-style: none;
+    padding: 0 10px 0 10px;
+  }
+
+  .street,
+  .town,
+  .phone,
+  .email {
+    margin: .50em 0;
+    text-align: left;
+  }
+
+  .map-image {
+    margin-left: 1em;
+  }
+  
 
 }
