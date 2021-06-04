@@ -46,9 +46,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*position: fixed;
+  position: fixed;
   width: 100%;
-  top: 0;*/
+  top: 0;
 }
 
 ul.list{
@@ -258,6 +258,11 @@ li a {
     max-width: 900px;
     margin: 8em auto;
     line-height: 1.7;
+  }
+
+  .d-stack {
+    width: 7em;
+    margin: 0 1em;
   }
 
   .donut-section {
